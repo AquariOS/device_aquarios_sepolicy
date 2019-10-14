@@ -10,13 +10,13 @@ endif
 endif
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/lineage/sepolicy/qcom/private
+    device/aquarios/sepolicy/qcom/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/lineage/sepolicy/qcom/dynamic
+    device/aquarios/sepolicy/qcom/dynamic
 else
 BOARD_SEPOLICY_DIRS += \
-    device/lineage/sepolicy/qcom/dynamic \
-    device/lineage/sepolicy/qcom/vendor
+    device/aquarios/sepolicy/qcom/dynamic \
+    device/aquarios/sepolicy/qcom/vendor
 endif
