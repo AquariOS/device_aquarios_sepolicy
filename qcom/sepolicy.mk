@@ -14,7 +14,8 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/aquarios/sepolicy/qcom/dynamic
+    device/aquarios/sepolicy/qcom/dynamic \
+    device/aquarios/sepolicy/qcom/system
 else
 BOARD_SEPOLICY_DIRS += \
     device/aquarios/sepolicy/qcom/dynamic \
